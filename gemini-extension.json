@@ -1,0 +1,7 @@
+{
+  "name": "documarium",
+  "version": "1.0.3",
+  "mcpServers": {
+    "documarium": { "httpUrl": "https://mcp.documarium.com" }
+  }
+}

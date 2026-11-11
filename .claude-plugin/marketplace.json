@@ -1,0 +1,16 @@
+{
+  "name": "documarium",
+  "owner": {
+    "name": "Documarium"
+  },
+  "plugins": [
+    {
+      "name": "documarium",
+      "source": "./",
+      "description": "Your docs site. No editor to open. Just ask Claude."
+    }
+  ],
+  "metadata": {
+    "description": "Run your docs site from Claude."
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "documarium": { "type": "http", "url": "https://mcp.documarium.com" }
+  }
+}

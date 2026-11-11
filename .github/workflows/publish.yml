@@ -1,0 +1,26 @@
+name: publish
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the tag matches server.json
+        run: |
+          v="$(jq -r .version server.json)"
+          [ "v$v" = "$GITHUB_REF_NAME" ] || { echo "tag $GITHUB_REF_NAME != server.json version $v"; exit 1; }
+      - name: Install mcp-publisher (pinned; bump deliberately)
+        run: |
+          curl -fsSL "https://github.com/modelcontextprotocol/registry/releases/download/v1.8.1/mcp-publisher_linux_amd64.tar.gz" | tar xz mcp-publisher
+          ./mcp-publisher --help >/dev/null
+      - name: Publish to the MCP Registry (DNS-verified namespace com.documarium)
+        env:
+          MCP_PRIVATE_KEY: ${{ secrets.MCP_PRIVATE_KEY }}
+        run: |
+          ./mcp-publisher login dns --domain documarium.com --private-key "$MCP_PRIVATE_KEY"
+          ./mcp-publisher publish

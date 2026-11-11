@@ -1,0 +1,21 @@
+{
+  "name": "documarium",
+  "version": "1.0.3",
+  "description": "Your docs site. No editor to open. Just ask Claude.",
+  "author": {
+    "name": "Documarium",
+    "url": "https://documarium.com/?utm_source=claude-plugin&utm_medium=listing&utm_campaign=C002&utm_content=DIR-2026W43-006"
+  },
+  "homepage": "https://docs.documarium.com/getting-started/installation/?utm_source=claude-plugin&utm_medium=listing&utm_campaign=C002&utm_content=DIR-2026W43-006",
+  "repository": "https://github.com/azatarm-prog/documarium-connector",
+  "license": "MIT",
+  "keywords": [
+    "documentation",
+    "docs",
+    "help center",
+    "knowledge base",
+    "mcp"
+  ],
+  "privacyPolicyUrl": "https://docs.documarium.com/policies/privacy/?utm_source=claude-plugin&utm_medium=listing&utm_campaign=C002&utm_content=DIR-2026W43-006",
+  "icon": ".claude-plugin/icon.png"
+}
