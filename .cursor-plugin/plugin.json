@@ -1,0 +1,13 @@
+{
+  "name": "documarium",
+  "version": "1.0.3",
+  "description": "Your docs site. No editor to open. Just ask Claude.",
+  "author": { "name": "Documarium", "email": "support@documarium.com" },
+  "logo": ".claude-plugin/icon.png",
+  "homepage": "https://documarium.com/?utm_source=cursor&utm_medium=listing&utm_campaign=C002",
+  "repository": "https://github.com/azatarm-prog/documarium-connector",
+  "keywords": ["documentation", "docs", "help center", "knowledge base", "mcp"],
+  "mcpServers": {
+    "documarium": { "url": "https://mcp.documarium.com" }
+  }
+}

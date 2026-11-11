@@ -16,6 +16,7 @@ This repository holds the public listing files for the Documarium connector. The
 
 - **Claude (web, desktop, mobile):** add the connector by URL: `https://mcp.documarium.com`. Setup guide: [docs.documarium.com](https://docs.documarium.com/getting-started/installation/?utm_source=github&utm_medium=readme&utm_campaign=C002&utm_content=DIR-2026W43-006).
 - **Claude Code:** `/plugin install documarium --marketplace azatarm-prog/documarium-connector`, or `claude mcp add --transport http documarium https://mcp.documarium.com`.
+- **Cursor:** install the Documarium plugin from the Cursor Marketplace once it's listed, or add `https://mcp.documarium.com` as a remote MCP server in Cursor settings.
 - **Gemini CLI:** `gemini extensions install https://github.com/azatarm-prog/documarium-connector`.
 - **Any MCP client:** the server speaks streamable HTTP with OAuth (dynamic client registration).
 
@@ -25,6 +26,7 @@ This repository holds the public listing files for the Documarium connector. The
 |---|---|
 | `server.json` | The official MCP Registry entry (`com.documarium/documarium`) |
 | `.claude-plugin/plugin.json`, `.mcp.json`, `skills/` | The Claude Code plugin |
+| `.cursor-plugin/plugin.json` | The Cursor plugin |
 | `gemini-extension.json` | The Gemini CLI extension |
 | `.github/workflows/publish.yml` | Publishes to the MCP Registry on a `v*` tag |
 
